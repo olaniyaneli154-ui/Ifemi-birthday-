@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday Ifemi ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #fff7f8;
+      color: #3b171d;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+      background: linear-gradient(145deg, #42000d, #8f1027 55%, #c52d4b);
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "❤";
+      position: absolute;
+      font-size: 90px;
+      opacity: .08;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .hero::before {
+      left: 5%;
+      top: 15%;
+    }
+
+    .hero::after {
+      right: 5%;
+      bottom: 12%;
+      animation-delay: 2s;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .small-title {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      opacity: .85;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(48px, 12vw, 92px);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .script {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(65px, 16vw, 120px);
+      line-height: 1;
+    }
+
+    .subtitle {
+      margin: 24px auto;
+      max-width: 570px;
+      font-size: 15px;
+    }
+
+    .warning {
+      max-width: 540px;
+      margin: 28px auto 0;
+      padding: 20px;
+      border: 1px solid rgba(255,255,255,.3);
+      background: rgba(255,255,255,.09);
+      border-radius: 18px;
+      font-size: 14px;
+    }
+
+    .warning strong {
+      display: block;
+      margin-bottom: 7px;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 13px 24px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #7d1024;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: .25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.18);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .section-label {
+      color: #a51834;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 7vw, 52px);
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+
+    .lead {
+      max-width: 700px;
+      font-size: 16px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(90,0,20,.08);
+      border: 1px solid #f5dce1;
+    }
+
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: #8e1027;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
+    .highlight {
+      background: #8d1027;
+      color: white;
+      max-width: none;
+    }
+
+    .highlight-inner {
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .highlight .section-label {
+      color: #ffd9df;
+    }
+
+    .timeline {
+      margin-top: 30px;
+      padding: 28px;
+      background: #fff;
+      border-radius: 20px;
+      border-left: 5px solid #a51834;
+    }
+
+    .timeline p {
+      margin-bottom: 13px;
+    }
+
+    .timeline p:last-child {
+      margin-bottom: 0;
+    }
+
+    .court {
+      background: #fff;
+      border: 1px solid #f0cbd2;
+      border-radius: 22px;
+      padding: 30px;
+      margin-top: 30px;
+      box-shadow: 0 10px 30px rgba(90,0,20,.06);
+    }
+
+    .verdict {
+      margin-top: 20px;
+      min-height: 30px;
+      font-weight: 600;
+      color: #8d1027;
+    }
+
+    .choice {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .choice button {
+      border: 1px solid #bd4059;
+      background: white;
+      color: #8d1027;
+      padding: 11px 17px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 600;
+    }
+
+    .choice button:hover {
+      background: #fff0f2;
+    }
+
+    .letter {
+      background: #fff;
+      padding: 34px;
+      border-radius: 22px;
+      box-shadow: 0 12px 35px rgba(90,0,20,.08);
+      margin-top: 30px;
+      border: 1px solid #f0d7dc;
+    }
+
+    .letter p {
+      margin-bottom: 17px;
+    }
+
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 38px;
+      color: #a51834;
+      margin-top: 20px;
+    }
+
+    .final {
+      max-width: none;
+      text-align: center;
+      background: linear-gradient(145deg,#4b000e,#a71936);
+      color: white;
+    }
+
+    .final h2 {
+      font-size: clamp(38px, 8vw, 64px);
+    }
+
+    .final .script {
+      font-size: 70px;
+    }
+
+    .final p {
+      max-width: 650px;
+      margin: 15px auto;
+    }
+
+    .heart {
+      display: inline-block;
+      animation: beat 1.2s infinite;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .8s ease, transform .8s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: none;
+    }
+
+    @keyframes float {
+
+      0%,100% {
+        transform: translateY(0) rotate(-8deg);
+      }
+
+      50% {
+        transform: translateY(-25px) rotate(8deg);
+      }
+
+    }
+
+    @keyframes beat {
+
+      0%,100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.18);
+      }
+
+    }
+
+    @media(max-width:600px) {
+
+      section {
+        padding: 65px 18px;
+      }
+
+      .warning {
+        font-size: 13px;
+      }
+
+      .letter,
+      .court,
+      .timeline {
+        padding: 24px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <div class="small-title">
+        For My MAN
+      </div>
+
+      <h1>
+        Happy Birthday
+      </h1>
+
+      <div class="script">
+        Ifemi...
+      </div>
+
+      <p class="subtitle">
+        I could have just sent you a birthday message,
+        but obviously that would have been too normal.
+        So welcome to your very own little corner of the internet.
+      </p>
+
+      <div class="warning">
+
+        <strong>
+          PLEASE READ BEFORE CONTINUING
+        </strong>
+
+        You are about to enter a website made by your girlfriend.
+        Expect affection, small embarrassment, unnecessary sweetness
+        and at least one argument about generations.
+        Proceed at your own risk. ❤️
+
+      </div>
+
+      <a href="#story" class="btn">
+        Okay, let me see 😌
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- 11 MONTHS -->
+
+  <section id="story" class="reveal">
+
+    <div class="section-label">
+      So... about you
+    </div>
+
+    <h2>
+      How did you become this important?
+    </h2>
+
+    <p class="lead">
+
+      Honestly, I don't even know how 11 months managed to pass this quickly.
+      Somewhere between all the gist, the movies, the quality time and our many
+      unnecessary debates, you became someone I genuinely look forward to
+      talking to and spending time with.
+
+    </p>
+
+
+    <div class="timeline">
+
+      <p>
+        <strong>11 months</strong> of you and me.
+      </p>
+
+      <p>
+        <strong>Countless conversations</strong>
+        that somehow always have another topic.
+      </p>
+
+      <p>
+        <strong>Movie time</strong>
+        that sometimes becomes more gist than movie.
+      </p>
+
+      <p>
+        <strong>Quality time</strong>
+        that I would happily choose again and again.
+      </p>
+
+      <p>
+        And, of course, enough Millennial versus Gen Z arguments
+        to qualify us for a television show.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- THINGS I LOVE -->
+
+  <section class="reveal">
+
+    <div class="section-label">
+      Things I love about my man
+    </div>
+
+    <h2>
+      Let me expose you small.
+    </h2>
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>
+          Your intentionality
+        </h3>
+
+        <p>
+          This is probably one of the things I notice most about you.
+          You actually put thought into things, and I really appreciate
+          that about you.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Your sweetness
+        </h3>
+
+        <p>
+          You have this sweet side that I genuinely love.
+          And yes, before you start forming hard guy,
+          I have noticed it.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Our gist
+        </h3>
+
+        <p>
+          There is something about talking to you.
+          We can start with one small topic and somehow end up
+          discussing five completely different things.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Our time together
+        </h3>
+
+        <p>
+          I love the simple moments with you.
+          Sitting together, talking, watching something,
+          laughing and just enjoying each other's company.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Your place in my life
+        </h3>
+
+        <p>
+          You have become part of my everyday thoughts in a way
+          I did not plan for. And honestly, I like it here.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          You being you
+        </h3>
+
+        <p>
+          No long speech for this one.
+          I just like you. Very much.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- QUALITY TIME -->
+
+  <section class="highlight reveal">
+
+    <div class="highlight-inner">
+
+      <div class="section-label">
+        The Quality Time Department
+      </div>
+
+      <h2>
+        My favourite thing is actually just being with you.
+      </h2>
+
+      <p>
+
+        It does not always have to be somewhere fancy.
+        Sometimes it is just us talking, laughing, watching a movie
+        or doing absolutely nothing important.
+
+        Those moments mean a lot to me because they are ours.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- MILLENNIAL VS GEN Z -->
+
+  <section class="reveal">
+
+    <div class="section-label">
+      Official Relationship Court
+    </div>
+
+    <h2>
+      Millennial vs Gen Z
+    </h2>
+
+    <p class="lead">
+
+      Since we apparently cannot have a normal conversation without
+      this matter finding its way into it, I have decided to settle it officially.
+
+    </p>
+
+
+    <div class="court">
+
+      <p>
+        <strong>Case:</strong>
+        Who is actually correct about whether something is Millennial or Gen Z?
+      </p>
+
+      <p>
+        <strong>Defendant:</strong>
+        Femi
+      </p>
+
+      <p>
+        <strong>Prosecutor:</strong>
+        Me, obviously.
+      </p>
+
+
+      <div class="choice">
+
+        <button onclick="verdict('me')">
+          Elizabeth is right
+        </button>
+
+        <button onclick="verdict('femi')">
+          Femi is right
+        </button>
+
+        <button onclick="verdict('both')">
+          Both of you are doing too much
+        </button>
+
+      </div>
+
+
+      <div class="verdict" id="verdict"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BIRTHDAY WISH -->
+
+  <section class="reveal">
+
+    <div class="section-label">
+      Your Birthday Wish
+    </div>
+
+    <h2>
+      What I want for you this year.
+    </h2>
+
+
+    <div class="letter">
+
+      <p>
+        My baby,
+      </p>
+
+
+      <p>
+        On your birthday, I just want good things for you.
+      </p>
+
+
+      <p>
+        I pray that God keeps you, protects you and gives you good health.
+        I pray that the things you have been working towards begin to fall into place
+        and that you have the wisdom to recognise the opportunities that are meant for you.
+      </p>
+
+
+      <p>
+        I pray that this new year of your life brings you peace,
+        genuine happiness, growth and plenty of reasons to smile.
+        I pray that the work of your hands is blessed and that you are able to enjoy
+        the results of everything you have been putting your effort into.
+      </p>
+
+
+      <p>
+        I hope you meet people who genuinely want to see you do well.
+        I hope you have the courage to go after the things you really want
+        and the patience to keep going when things take longer than expected.
+      </p>
+
+
+      <p>
+        And above everything, I pray that you continue to become the man
+        you want to be.
+
+        Not because you have to prove anything to anybody,
+        but because there is still so much ahead of you.
+      </p>
+
+
+      <p>
+        I want this year to be kind to you.
+        I want you to laugh more, enjoy yourself more,
+        win at the things that matter to you and have plenty of moments
+        that make you look back and say,
+        "Yeah, this was a good year."
+      </p>
+
+
+      <p>
+        Happy birthday, Ifemi.
+        I am genuinely happy that you were born.
+      </p>
+
+
+      <div class="signature">
+        I love you ❤️
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOVE LETTER -->
+
+  <section class="reveal">
+
+    <div class="section-label">
+      Okay, enough teasing
+    </div>
+
+    <h2>
+      Let me be serious for a minute.
+    </h2>
+
+
+    <div class="letter">
+
+      <p>
+        My baby,
+      </p>
+
+
+      <p>
+        I really hope you know how much I appreciate having you in my life.
+        I love the time we spend together, our conversations, the random gist,
+        the movies and even the little arguments that somehow become full discussions.
+      </p>
+
+
+      <p>
+        One thing I genuinely admire about you is how intentional you are.
+        I notice it. I notice the little things, the effort and the way you
+        approach the people and things that matter to you.
+      </p>
+
+
+      <p>
+        I also love how comfortable I can be around you.
+        I can talk to you, gist with you, laugh with you and just enjoy
+        being myself around you.
+      </p>
+
+
+      <p>
+        These 11 months have given me memories that I genuinely treasure.
+        And I am looking forward to making many more with you.
+      </p>
+
+
+      <p>
+        I want more conversations that start from nowhere.
+        More movies that we may or may not actually finish watching.
+        More quality time.
+        More laughter.
+        More memories.
+      </p>
+
+
+      <p>
+        And yes, unfortunately for you,
+        more arguments about whether something is Millennial or Gen Z.
+      </p>
+
+
+      <p>
+        Thank you for being you.
+        Thank you for the sweetness, the intentionality
+        and the place you have made for me in your life.
+      </p>
+
+
+      <p>
+        Happy birthday, my man.
+        I love you.
+      </p>
+
+
+      <div class="signature">
+        Your baby ❤️
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL -->
+
+  <section class="final">
+
+    <div class="script">
+      For my MAN
+    </div>
+
+
+    <h2>
+      Happy Birthday, Ifemi
+      <span class="heart">❤️</span>
+    </h2>
+
+
+    <p>
+      My man.
+      My baby.
+      My favourite gist partner.
+      My movie partner.
+      My favourite person to argue with.
+    </p>
+
+
+    <p>
+      I hope you have a really good birthday.
+      And yes, your birthday gift includes unlimited access to me today.
+      Please use it wisely.
+    </p>
+
+
+    <p>
+      <strong>
+        Now come and collect your birthday hug. ❤️
+      </strong>
+    </p>
+
+  </section>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function verdict(choice) {
+
+      const box = document.getElementById("verdict");
+
+
+      if (choice === "me") {
+
+        box.textContent =
+          "Correct answer. Case closed. Thank you for participating. 😂❤️";
+
+      }
+
+      else if (choice === "femi") {
+
+        box.textContent =
+          "Interesting. Unfortunately, the court has rejected this evidence. 😂";
+
+      }
+
+      else {
+
+        box.textContent =
+          "Finally, somebody is being sensible. But I still think I am right. 😂❤️";
+
+      }
+
+    }
+
+
+    const observer = new IntersectionObserver(
+
+      (entries) => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+          }
+
+        });
+
+      },
+
+      {
+        threshold: 0.12
+      }
+
+    );
+
+
+    document.querySelectorAll(".reveal").forEach(el => {
+
+      observer.observe(el);
+
+    });
+
+  </script>
+
+
+</body>
+</html>
