@@ -1,1270 +1,667 @@
-<<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="UTF-8">
+<title>Happy Birthday Ifemi ❤️</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <title>Happy Birthday Ifemi ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fff7f8;
+    color: #35151b;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.script {
+    font-family: 'Great Vibes', cursive;
+}
 
 
-  <style>
+/* HERO */
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+.hero {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.12), transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(255,190,200,.12), transparent 25%),
+        linear-gradient(135deg, #350008, #6e071d, #a7193b);
+}
+
+.hero-content {
+    max-width: 750px;
+    position: relative;
+    z-index: 2;
+}
+
+.small-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 12vw, 90px);
+    line-height: 1;
+}
+
+.hero .script {
+    font-size: clamp(70px, 17vw, 125px);
+    line-height: 1;
+}
+
+.subtitle {
+    max-width: 580px;
+    margin: 25px auto;
+    font-size: 15px;
+}
+
+.warning {
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 22px;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 20px;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(8px);
+    font-size: 14px;
+}
+
+.warning strong {
+    display: block;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: white;
+    color: #7d1024;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+
+/* SECTIONS */
+
+section {
+    max-width: 950px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.section-label {
+    color: #a51834;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+section h2 {
+    font-size: clamp(32px, 7vw, 52px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.lead {
+    max-width: 700px;
+    font-size: 16px;
+}
+
+
+/* 11 MONTHS */
+
+.timeline {
+    margin-top: 30px;
+    padding: 28px;
+    background: white;
+    border-left: 5px solid #a51834;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(90,0,20,.08);
+}
+
+.timeline p {
+    margin-bottom: 13px;
+}
+
+.timeline p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* LOVE CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #f2d9df;
+    box-shadow: 0 10px 30px rgba(90,0,20,.07);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    color: #8d1027;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+
+/* QUALITY TIME */
+
+.highlight {
+    max-width: none;
+    color: white;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,.08), transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255,255,255,.08), transparent 20%),
+        #8d1027;
+}
+
+.highlight-inner {
+    max-width: 950px;
+    margin: auto;
+}
+
+.highlight .section-label {
+    color: #ffd8df;
+}
+
+
+/* COURT */
+
+.court {
+    margin-top: 30px;
+    padding: 30px;
+    background: white;
+    border: 1px solid #f0cbd2;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(90,0,20,.07);
+}
+
+.choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.choice button {
+    padding: 11px 17px;
+    border: 1px solid #bd4059;
+    border-radius: 25px;
+    background: white;
+    color: #8d1027;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.choice button:hover {
+    background: #fff0f2;
+}
+
+.verdict {
+    margin-top: 20px;
+    color: #8d1027;
+    font-weight: 600;
+    min-height: 30px;
+}
+
+
+/* BIRTHDAY CAKE */
+
+.cake-section {
+    max-width: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.9), transparent 20%),
+        radial-gradient(circle at 85% 70%, rgba(255,200,210,.5), transparent 25%),
+        #fff0f3;
+}
+
+.cake-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+.cake-intro {
+    max-width: 600px;
+    margin: auto;
+}
+
+.cake-area {
+    width: 360px;
+    height: 330px;
+    max-width: 95vw;
+    margin: 40px auto 20px;
+    position: relative;
+}
+
+
+/* PLATE */
+
+.cake-plate {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 340px;
+    max-width: 95vw;
+    height: 25px;
+    background: #d8a2ad;
+    border-radius: 50%;
+    box-shadow: 0 10px 18px rgba(70,0,20,.2);
+}
+
+
+/* CAKE */
+
+.cake {
+    position: absolute;
+    width: 280px;
+    height: 135px;
+    left: 50%;
+    bottom: 38px;
+    transform: translateX(-50%);
+    border-radius: 15px 15px 12px 12px;
+    background: linear-gradient(#68221e, #35100e);
+    box-shadow: 0 12px 20px rgba(50,0,0,.2);
+}
+
+.cake-top {
+    position: absolute;
+    width: 294px;
+    height: 60px;
+    top: -27px;
+    left: -7px;
+    border-radius: 50%;
+    background: #7a3229;
+}
+
+.cream {
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    width: 294px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f8d9d7;
+}
+
+.cream:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 294px;
+    height: 22px;
+    background: #f8d9d7;
+    border-radius: 0 0 50% 50%;
+}
+
+.cake-writing {
+    position: absolute;
+    top: 47px;
+    width: 100%;
+    text-align: center;
+    color: #ffd9bc;
+    font-family: 'Great Vibes', cursive;
+    font-size: 29px;
+    line-height: 1.1;
+    z-index: 4;
+}
+
+.cake-decoration {
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+    text-align: center;
+    color: #e7a2ad;
+    letter-spacing: 7px;
+}
+
+
+/* CANDLES */
+
+.candles {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 19px;
+    z-index: 10;
+}
+
+.candle {
+    width: 14px;
+    height: 76px;
+    position: relative;
+    border-radius: 4px;
+    background: repeating-linear-gradient(
+        -45deg,
+        #fff 0px,
+        #fff 7px,
+        #d93452 7px,
+        #d93452 14px
+    );
+    box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+
+
+/* FLAMES */
+
+.flame {
+    position: absolute;
+    width: 18px;
+    height: 27px;
+    left: -2px;
+    top: -28px;
+    border-radius: 50% 50% 50% 50%;
+    background: #ffad24;
+    transform: rotate(45deg);
+    box-shadow:
+        0 0 10px #ffad24,
+        0 0 25px rgba(255,160,20,.8);
+    animation: flame 0.6s infinite alternate;
+    transition: .5s;
+}
+
+.flame:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    left: 5px;
+    top: 6px;
+    border-radius: 50%;
+    background: #fff5d5;
+}
+
+.flame.blown {
+    opacity: 0;
+    transform: translateY(-35px) scale(.2) rotate(45deg);
+}
+
+@keyframes flame {
+    from {
+        transform: rotate(42deg) scale(1);
     }
 
-
-    html {
-      scroll-behavior: smooth;
+    to {
+        transform: rotate(48deg) scale(1.1);
     }
+}
 
 
-    body {
-      background: #fff7f8;
-      color: #3b171d;
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
+/* BLOW BUTTON */
+
+.blow-button {
+    border: none;
+    border-radius: 30px;
+    padding: 15px 28px;
+    background: linear-gradient(135deg, #72091f, #bd2345);
+    color: white;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(90,0,20,.2);
+    transition: .3s;
+}
+
+.blow-button:hover {
+    transform: translateY(-3px);
+}
+
+.wish-message {
+    margin-top: 20px;
+    min-height: 40px;
+    color: #8d1027;
+    font-family: 'Great Vibes', cursive;
+    font-size: 34px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: .6s;
+}
+
+.wish-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
-    /* =========================
-       FLOATING DECORATIONS
-    ========================== */
+/* BIRTHDAY WISH AND LETTER */
 
-    .floating-heart {
-      position: fixed;
-      bottom: -40px;
-      font-size: 20px;
-      pointer-events: none;
-      animation: rise 8s linear forwards;
-      z-index: 999;
-      opacity: .8;
-    }
+.letter {
+    margin-top: 30px;
+    padding: 34px;
+    background: white;
+    border-radius: 22px;
+    border: 1px solid #f0d7dc;
+    box-shadow: 0 12px 35px rgba(90,0,20,.08);
+}
+
+.letter p {
+    margin-bottom: 17px;
+}
+
+.signature {
+    margin-top: 20px;
+    color: #a51834;
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+}
 
 
-    @keyframes rise {
+/* CONFETTI */
 
-      0% {
+.confetti {
+    position: fixed;
+    top: -20px;
+    width: 10px;
+    height: 15px;
+    z-index: 9999;
+    pointer-events: none;
+    animation: fall 3.5s linear forwards;
+}
+
+@keyframes fall {
+    from {
         transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(110vh) rotate(720deg);
         opacity: 0;
-      }
+    }
+}
 
-      15% {
-        opacity: .8;
-      }
 
-      100% {
-        transform: translateY(-110vh) rotate(25deg);
+/* FLOATING HEARTS */
+
+.floating-heart {
+    position: fixed;
+    bottom: -40px;
+    z-index: 9998;
+    pointer-events: none;
+    animation: rise 7s linear forwards;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
         opacity: 0;
-      }
-
     }
 
-
-    /* =========================
-       HERO
-    ========================== */
-
-    .hero {
-
-      min-height: 100vh;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      text-align: center;
-
-      padding: 40px 20px;
-
-      position: relative;
-
-      background:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,.08), transparent 25%),
-        radial-gradient(circle at 80% 30%, rgba(255,200,200,.12), transparent 25%),
-        linear-gradient(145deg, #300008, #650016 45%, #a51834 75%, #c52d4b);
-
-      color: white;
-
-      overflow: hidden;
-
+    15% {
+        opacity: 1;
     }
 
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
 
-    .hero::before,
-    .hero::after {
 
-      content: "❤";
+/* FINAL */
 
-      position: absolute;
+.final {
+    max-width: none;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.08), transparent 20%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,.08), transparent 20%),
+        linear-gradient(145deg, #400009, #a71936);
+}
 
-      font-size: 100px;
+.final .script {
+    font-size: 70px;
+}
 
-      opacity: .07;
+.final h2 {
+    font-size: clamp(38px, 8vw, 64px);
+}
 
-      animation: float 6s ease-in-out infinite;
+.final p {
+    max-width: 650px;
+    margin: 15px auto;
+}
 
+.heart {
+    display: inline-block;
+    animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
     }
 
-
-    .hero::before {
-
-      left: 5%;
-
-      top: 15%;
-
+    50% {
+        transform: scale(1.2);
     }
+}
 
 
-    .hero::after {
+/* SCROLL ANIMATION */
 
-      right: 5%;
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: .8s ease;
+}
 
-      bottom: 12%;
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-      animation-delay: 2s;
 
-    }
+/* MOBILE */
 
-
-    .hero-content {
-
-      max-width: 800px;
-
-      position: relative;
-
-      z-index: 2;
-
-    }
-
-
-    .small-title {
-
-      letter-spacing: 4px;
-
-      text-transform: uppercase;
-
-      font-size: 12px;
-
-      opacity: .9;
-
-      margin-bottom: 18px;
-
-    }
-
-
-    h1 {
-
-      font-family: 'Playfair Display', serif;
-
-      font-size: clamp(48px, 12vw, 92px);
-
-      line-height: 1;
-
-      margin-bottom: 4px;
-
-    }
-
-
-    .script {
-
-      font-family: 'Great Vibes', cursive;
-
-      font-size: clamp(65px, 16vw, 120px);
-
-      line-height: 1;
-
-    }
-
-
-    .subtitle {
-
-      margin: 24px auto;
-
-      max-width: 570px;
-
-      font-size: 15px;
-
-    }
-
-
-    .warning {
-
-      max-width: 540px;
-
-      margin: 28px auto 0;
-
-      padding: 20px;
-
-      border: 1px solid rgba(255,255,255,.3);
-
-      background: rgba(255,255,255,.09);
-
-      backdrop-filter: blur(5px);
-
-      border-radius: 18px;
-
-      font-size: 14px;
-
-    }
-
-
-    .warning strong {
-
-      display: block;
-
-      margin-bottom: 7px;
-
-      letter-spacing: 1px;
-
-    }
-
-
-    .btn {
-
-      display: inline-block;
-
-      margin-top: 24px;
-
-      padding: 13px 24px;
-
-      border: none;
-
-      border-radius: 30px;
-
-      background: white;
-
-      color: #7d1024;
-
-      font-weight: 700;
-
-      cursor: pointer;
-
-      text-decoration: none;
-
-      transition: .25s;
-
-    }
-
-
-    .btn:hover {
-
-      transform: translateY(-3px);
-
-      box-shadow: 0 8px 20px rgba(0,0,0,.18);
-
-    }
-
-
-    /* =========================
-       GENERAL SECTIONS
-    ========================== */
+@media (max-width: 600px) {
 
     section {
-
-      padding: 80px 20px;
-
-      max-width: 950px;
-
-      margin: auto;
-
+        padding: 65px 18px;
     }
 
-
-    .section-label {
-
-      color: #a51834;
-
-      text-transform: uppercase;
-
-      letter-spacing: 3px;
-
-      font-size: 11px;
-
-      font-weight: 700;
-
-      margin-bottom: 12px;
-
-    }
-
-
-    h2 {
-
-      font-family: 'Playfair Display', serif;
-
-      font-size: clamp(32px, 7vw, 52px);
-
-      line-height: 1.2;
-
-      margin-bottom: 22px;
-
-    }
-
-
-    .lead {
-
-      max-width: 700px;
-
-      font-size: 16px;
-
-    }
-
-
-    /* =========================
-       TIMELINE
-    ========================== */
-
+    .letter,
+    .court,
     .timeline {
-
-      margin-top: 30px;
-
-      padding: 28px;
-
-      background: #fff;
-
-      border-radius: 20px;
-
-      border-left: 5px solid #a51834;
-
-      box-shadow: 0 10px 30px rgba(90,0,20,.06);
-
+        padding: 24px;
     }
 
-
-    .timeline p {
-
-      margin-bottom: 13px;
-
+    .warning {
+        font-size: 13px;
     }
-
-
-    .timeline p:last-child {
-
-      margin-bottom: 0;
-
-    }
-
-
-    /* =========================
-       LOVE CARDS
-    ========================== */
-
-    .cards {
-
-      display: grid;
-
-      grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
-
-      gap: 18px;
-
-      margin-top: 32px;
-
-    }
-
-
-    .card {
-
-      background: white;
-
-      padding: 25px;
-
-      border-radius: 20px;
-
-      box-shadow: 0 10px 30px rgba(90,0,20,.08);
-
-      border: 1px solid #f5dce1;
-
-      transition: .3s;
-
-    }
-
-
-    .card:hover {
-
-      transform: translateY(-6px);
-
-      box-shadow: 0 15px 35px rgba(90,0,20,.13);
-
-    }
-
-
-    .card h3 {
-
-      font-family: 'Playfair Display', serif;
-
-      font-size: 22px;
-
-      margin-bottom: 8px;
-
-      color: #8e1027;
-
-    }
-
-
-    .card p {
-
-      font-size: 14px;
-
-    }
-
-
-    /* =========================
-       QUALITY TIME
-    ========================== */
-
-    .highlight {
-
-      background:
-
-        radial-gradient(circle at 20% 30%, rgba(255,255,255,.08), transparent 25%),
-
-        radial-gradient(circle at 80% 70%, rgba(255,255,255,.08), transparent 25%),
-
-        #8d1027;
-
-      color: white;
-
-      max-width: none;
-
-      position: relative;
-
-      overflow: hidden;
-
-    }
-
-
-    .highlight::before {
-
-      content: "❤   ✦   ❤   ✦   ❤";
-
-      position: absolute;
-
-      top: 20px;
-
-      left: 10%;
-
-      opacity: .08;
-
-      font-size: 35px;
-
-      letter-spacing: 20px;
-
-    }
-
-
-    .highlight-inner {
-
-      max-width: 950px;
-
-      margin: auto;
-
-    }
-
-
-    .highlight .section-label {
-
-      color: #ffd9df;
-
-    }
-
-
-    /* =========================
-       COURT
-    ========================== */
-
-    .court {
-
-      background: #fff;
-
-      border: 1px solid #f0cbd2;
-
-      border-radius: 22px;
-
-      padding: 30px;
-
-      margin-top: 30px;
-
-      box-shadow: 0 10px 30px rgba(90,0,20,.06);
-
-    }
-
-
-    .verdict {
-
-      margin-top: 20px;
-
-      min-height: 30px;
-
-      font-weight: 600;
-
-      color: #8d1027;
-
-    }
-
-
-    .choice {
-
-      display: flex;
-
-      gap: 12px;
-
-      flex-wrap: wrap;
-
-      margin-top: 18px;
-
-    }
-
-
-    .choice button {
-
-      border: 1px solid #bd4059;
-
-      background: white;
-
-      color: #8d1027;
-
-      padding: 11px 17px;
-
-      border-radius: 25px;
-
-      cursor: pointer;
-
-      font-family: inherit;
-
-      font-weight: 600;
-
-      transition: .25s;
-
-    }
-
-
-    .choice button:hover {
-
-      background: #fff0f2;
-
-      transform: translateY(-2px);
-
-    }
-
-
-    /* =========================
-       BIRTHDAY CAKE SECTION
-    ========================== */
-
-    .cake-section {
-
-      max-width: none;
-
-      text-align: center;
-
-      position: relative;
-
-      overflow: hidden;
-
-      background:
-
-        radial-gradient(circle at 15% 20%, rgba(255,255,255,.8), transparent 18%),
-
-        radial-gradient(circle at 85% 30%, rgba(255,220,220,.7), transparent 20%),
-
-        #fff0f3;
-
-    }
-
-
-    .cake-section .section-label {
-
-      color: #a51834;
-
-    }
-
-
-    .cake-subtitle {
-
-      max-width: 600px;
-
-      margin: 0 auto;
-
-      font-size: 15px;
-
-    }
-
 
     .cake-area {
-
-      width: 340px;
-
-      max-width: 90vw;
-
-      height: 300px;
-
-      margin: 45px auto 25px;
-
-      position: relative;
-
+        transform: scale(.85);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
     }
-
-
-    /* Cake plate */
-
-    .cake-plate {
-
-      position: absolute;
-
-      width: 330px;
-
-      max-width: 90vw;
-
-      height: 25px;
-
-      background: #d9a5ae;
-
-      border-radius: 50%;
-
-      bottom: 20px;
-
-      left: 50%;
-
-      transform: translateX(-50%);
-
-      box-shadow: 0 8px 15px rgba(70,0,20,.18);
-
-    }
-
-
-    /* Cake body */
-
-    .cake {
-
-      position: absolute;
-
-      width: 270px;
-
-      height: 130px;
-
-      left: 50%;
-
-      bottom: 38px;
-
-      transform: translateX(-50%);
-
-      background: linear-gradient(to bottom, #5a1b1b, #36100e);
-
-      border-radius: 20px 20px 12px 12px;
-
-      box-shadow: inset 0 -10px 20px rgba(0,0,0,.2);
-
-    }
-
-
-    .cake-top {
-
-      position: absolute;
-
-      width: 285px;
-
-      height: 55px;
-
-      left: -7px;
-
-      top: -25px;
-
-      background: #713020;
-
-      border-radius: 50%;
-
-      box-shadow: inset 0 5px 10px rgba(255,255,255,.12);
-
-    }
-
-
-    .cream {
-
-      position: absolute;
-
-      width: 285px;
-
-      height: 30px;
-
-      left: -7px;
-
-      top: 0;
-
-      background: #f7d8d5;
-
-      border-radius: 50%;
-
-    }
-
-
-    .cream::after {
-
-      content: "";
-
-      position: absolute;
-
-      width: 285px;
-
-      height: 25px;
-
-      top: 12px;
-
-      left: 0;
-
-      background: #f7d8d5;
-
-      border-radius: 0 0 50% 50%;
-
-    }
-
-
-    .cake-writing {
-
-      position: absolute;
-
-      top: 42px;
-
-      width: 100%;
-
-      text-align: center;
-
-      color: #ffd6b8;
-
-      font-family: 'Great Vibes', cursive;
-
-      font-size: 28px;
-
-      line-height: 1.1;
-
-      z-index: 3;
-
-    }
-
-
-    .cake-decoration {
-
-      position: absolute;
-
-      bottom: 12px;
-
-      width: 100%;
-
-      text-align: center;
-
-      color: #e9a5b3;
-
-      font-size: 18px;
-
-      letter-spacing: 8px;
-
-    }
-
-
-    /* =========================
-       CANDLES
-    ========================== */
 
     .candles {
-
-      position: absolute;
-
-      top: 25px;
-
-      left: 50%;
-
-      transform: translateX(-50%);
-
-      display: flex;
-
-      gap: 20px;
-
-      z-index: 10;
-
+        gap: 14px;
     }
-
-
-    .candle {
-
-      width: 14px;
-
-      height: 75px;
-
-      position: relative;
-
-      background:
-
-        repeating-linear-gradient(
-          -45deg,
-          #fff 0px,
-          #fff 8px,
-          #d83b57 8px,
-          #d83b57 14px
-        );
-
-      border-radius: 4px 4px 2px 2px;
-
-      box-shadow: 0 3px 6px rgba(0,0,0,.15);
-
-    }
-
-
-    .flame {
-
-      position: absolute;
-
-      width: 18px;
-
-      height: 27px;
-
-      top: -29px;
-
-      left: -2px;
-
-      background: #ffb52e;
-
-      border-radius: 50% 50% 50% 50%;
-
-      transform: rotate(45deg);
-
-      box-shadow:
-
-        0 0 12px #ffb52e,
-
-        0 0 25px rgba(255,180,40,.8);
-
-      animation: flicker .7s infinite alternate;
-
-      transition: .3s;
-
-    }
-
-
-    .flame::after {
-
-      content: "";
-
-      position: absolute;
-
-      width: 8px;
-
-      height: 14px;
-
-      background: #fff5d6;
-
-      border-radius: 50%;
-
-      left: 5px;
-
-      top: 6px;
-
-    }
-
-
-    .flame.blown {
-
-      opacity: 0;
-
-      transform: translateY(-30px) scale(.2) rotate(45deg);
-
-      pointer-events: none;
-
-    }
-
-
-    @keyframes flicker {
-
-      from {
-
-        transform: rotate(42deg) scale(1);
-
-      }
-
-      to {
-
-        transform: rotate(48deg) scale(1.08);
-
-      }
-
-    }
-
-
-    /* =========================
-       BLOW BUTTON
-    ========================== */
-
-    .blow-button {
-
-      border: none;
-
-      padding: 15px 28px;
-
-      border-radius: 35px;
-
-      background: linear-gradient(135deg,#7b0922,#bd2345);
-
-      color: white;
-
-      font-family: inherit;
-
-      font-weight: 700;
-
-      font-size: 15px;
-
-      cursor: pointer;
-
-      box-shadow: 0 8px 20px rgba(100,0,25,.2);
-
-      transition: .25s;
-
-    }
-
-
-    .blow-button:hover {
-
-      transform: translateY(-3px);
-
-      box-shadow: 0 12px 25px rgba(100,0,25,.3);
-
-    }
-
 
     .wish-message {
-
-      min-height: 35px;
-
-      margin-top: 22px;
-
-      color: #8d1027;
-
-      font-family: 'Great Vibes', cursive;
-
-      font-size: 34px;
-
-      opacity: 0;
-
-      transform: translateY(10px);
-
-      transition: .6s;
-
-    }
-
-
-    .wish-message.show {
-
-      opacity: 1;
-
-      transform: translateY(0);
-
-    }
-
-
-    /* =========================
-       CONFETTI
-    ========================== */
-
-    .confetti {
-
-      position: fixed;
-
-      width: 9px;
-
-      height: 14px;
-
-      top: -20px;
-
-      z-index: 2000;
-
-      pointer-events: none;
-
-      animation: confettiFall 3s linear forwards;
-
-    }
-
-
-    @keyframes confettiFall {
-
-      0% {
-
-        transform:
-          translateY(0)
-          rotate(0deg);
-
-        opacity: 1;
-
-      }
-
-      100% {
-
-        transform:
-          translateY(110vh)
-          rotate(720deg);
-
-        opacity: 0;
-
-      }
-
-    }
-
-
-    /* =========================
-       LOVE LETTER
-    ========================== */
-
-    .letter {
-
-      background: #fff;
-
-      padding: 34px;
-
-      border-radius: 22px;
-
-      box-shadow: 0 12px 35px rgba(90,0,20,.08);
-
-      margin-top: 30px;
-
-      border: 1px solid #f0d7dc;
-
-    }
-
-
-    .letter p {
-
-      margin-bottom: 17px;
-
-    }
-
-
-    .signature {
-
-      font-family: 'Great Vibes', cursive;
-
-      font-size: 38px;
-
-      color: #a51834;
-
-      margin-top: 20px;
-
-    }
-
-
-    /* =========================
-       FINAL SECTION
-    ========================== */
-
-    .final {
-
-      max-width: none;
-
-      text-align: center;
-
-      background:
-
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,.07), transparent 20%),
-
-        radial-gradient(circle at 80% 80%, rgba(255,255,255,.07), transparent 20%),
-
-        linear-gradient(145deg,#4b000e,#a71936);
-
-      color: white;
-
-      position: relative;
-
-      overflow: hidden;
-
-    }
-
-
-    .final::before {
-
-      content: "❤  ✦  ❤  ✦  ❤  ✦  ❤";
-
-      position: absolute;
-
-      top: 30px;
-
-      left: 0;
-
-      right: 0;
-
-      text-align: center;
-
-      font-size: 28px;
-
-      opacity: .08;
-
-      letter-spacing: 18px;
-
-    }
-
-
-    .final h2 {
-
-      font-size: clamp(38px,8vw,64px);
-
-    }
-
-
-    .final .script {
-
-      font-size: 70px;
-
-    }
-
-
-    .final p {
-
-      max-width: 650px;
-
-      margin: 15px auto;
-
-    }
-
-
-    .heart {
-
-      display: inline-block;
-
-      animation: beat 1.2s infinite;
-
-    }
-
-
-    /* =========================
-       SCROLL ANIMATION
-    ========================== */
-
-    .reveal {
-
-      opacity: 0;
-
-      transform: translateY(25px);
-
-      transition:
-
-        opacity .8s ease,
-
-        transform .8s ease;
-
-    }
-
-
-    .reveal.show {
-
-      opacity: 1;
-
-      transform: none;
-
-    }
-
-
-    /* =========================
-       ANIMATIONS
-    ========================== */
-
-    @keyframes float {
-
-      0%,100% {
-
-        transform:
-          translateY(0)
-          rotate(-8deg);
-
-      }
-
-      50% {
-
-        transform:
-          translateY(-25px)
-          rotate(8deg);
-
-      }
-
-    }
-
-
-    @keyframes beat {
-
-      0%,100% {
-
-        transform: scale(1);
-
-      }
-
-      50% {
-
-        transform: scale(1.18);
-
-      }
-
-    }
-
-
-    /* =========================
-       MOBILE
-    ========================== */
-
-    @media(max-width:600px) {
-
-      section {
-
-        padding: 65px 18px;
-
-      }
-
-
-      .warning {
-
-        font-size: 13px;
-
-      }
-
-
-      .letter,
-      .court,
-      .timeline {
-
-        padding: 24px;
-
-      }
-
-
-      .cake-area {
-
-        transform: scale(.85);
-
-        margin-left: auto;
-
-        margin-right: auto;
-
-      }
-
-
-      .candles {
-
-        gap: 15px;
-
-      }
-
-
-      .wish-message {
-
         font-size: 30px;
-
-      }
-
     }
 
-  </style>
+}
+
+</style>
 
 </head>
 
@@ -1272,377 +669,314 @@
 <body>
 
 
-  <!-- =========================
-       HERO
-  ========================== -->
+<!-- HERO -->
 
-  <header class="hero">
+<header class="hero">
 
     <div class="hero-content">
 
-      <div class="small-title">
-        For My MAN
-      </div>
+        <div class="small-title">
+            For My MAN
+        </div>
 
+        <h1>
+            Happy Birthday
+        </h1>
 
-      <h1>
-        Happy Birthday
-      </h1>
+        <div class="script">
+            Ifemi...
+        </div>
 
+        <p class="subtitle">
+            I could have just sent you a birthday message,
+            but obviously that would have been too normal.
+            So welcome to your very own little corner of the internet.
+        </p>
 
-      <div class="script">
-        Ifemi...
-      </div>
+        <div class="warning">
 
+            <strong>
+                PLEASE READ BEFORE CONTINUING
+            </strong>
 
-      <p class="subtitle">
+            You are about to enter a website made by your girlfriend.
+            Expect affection, small embarrassment, unnecessary sweetness
+            and at least one argument about generations.
+            Proceed at your own risk. ❤️
 
-        I could have just sent you a birthday message,
-        but obviously that would have been too normal.
-        So welcome to your very own little corner of the internet.
+        </div>
 
-      </p>
-
-
-      <div class="warning">
-
-        <strong>
-          PLEASE READ BEFORE CONTINUING
-        </strong>
-
-        You are about to enter a website made by your girlfriend.
-        Expect affection, small embarrassment, unnecessary sweetness
-        and at least one argument about generations.
-        Proceed at your own risk. ❤️
-
-      </div>
-
-
-      <a href="#story" class="btn">
-        Okay, let me see 😌
-      </a>
+        <a href="#story" class="btn">
+            Okay, let me see 😌
+        </a>
 
     </div>
 
-  </header>
+</header>
 
 
-  <!-- =========================
-       11 MONTHS
-  ========================== -->
+<!-- 11 MONTHS -->
 
-  <section id="story" class="reveal">
+<section id="story" class="reveal">
 
     <div class="section-label">
-      So... about you
+        So... about you
     </div>
 
-
     <h2>
-      How did you become this important?
+        How did you become this important?
     </h2>
-
 
     <p class="lead">
 
-      Honestly, I don't even know how 11 months managed to pass this quickly.
-      Somewhere between all the gist, the movies, the quality time and our many
-      unnecessary debates, you became someone I genuinely look forward to
-      talking to and spending time with.
+        Honestly, I don't even know how 11 months managed to pass this quickly.
+        Somewhere between all the gist, the movies, the quality time and our many
+        unnecessary debates, you became someone I genuinely look forward to
+        talking to and spending time with.
 
     </p>
-
 
     <div class="timeline">
 
-      <p>
-        <strong>11 months</strong> of you and me.
-      </p>
+        <p>
+            <strong>11 months</strong> of you and me.
+        </p>
 
+        <p>
+            <strong>Countless conversations</strong>
+            that somehow always have another topic.
+        </p>
 
-      <p>
-        <strong>Countless conversations</strong>
-        that somehow always have another topic.
-      </p>
+        <p>
+            <strong>Movie time</strong>
+            that sometimes becomes more gist than movie.
+        </p>
 
+        <p>
+            <strong>Quality time</strong>
+            that I would happily choose again and again.
+        </p>
 
-      <p>
-        <strong>Movie time</strong>
-        that sometimes becomes more gist than movie.
-      </p>
-
-
-      <p>
-        <strong>Quality time</strong>
-        that I would happily choose again and again.
-      </p>
-
-
-      <p>
-        And, of course, enough Millennial versus Gen Z arguments
-        to qualify us for a television show.
-      </p>
+        <p>
+            And, of course, enough Millennial versus Gen Z arguments
+            to qualify us for a television show.
+        </p>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- =========================
-       THINGS I LOVE
-  ========================== -->
+<!-- THINGS I LOVE -->
 
-  <section class="reveal">
+<section class="reveal">
 
     <div class="section-label">
-      Things I love about my man
+        Things I love about my man
     </div>
 
-
     <h2>
-      Let me expose you small.
+        Let me expose you small.
     </h2>
-
 
     <div class="cards">
 
+        <div class="card">
 
-      <div class="card">
+            <h3>
+                Your intentionality
+            </h3>
 
-        <h3>
-          Your intentionality
-        </h3>
+            <p>
+                This is probably one of the things I notice most about you.
+                You actually put thought into things, and I really appreciate
+                that about you.
+            </p>
 
-        <p>
-
-          This is probably one of the things I notice most about you.
-          You actually put thought into things, and I really appreciate
-          that about you.
-
-        </p>
-
-      </div>
+        </div>
 
 
-      <div class="card">
+        <div class="card">
 
-        <h3>
-          Your sweetness
-        </h3>
+            <h3>
+                Your sweetness
+            </h3>
 
-        <p>
+            <p>
+                You have this sweet side that I genuinely love.
+                And yes, before you start forming hard guy,
+                I have noticed it.
+            </p>
 
-          You have this sweet side that I genuinely love.
-          And yes, before you start forming hard guy,
-          I have noticed it.
-
-        </p>
-
-      </div>
+        </div>
 
 
-      <div class="card">
+        <div class="card">
 
-        <h3>
-          Our gist
-        </h3>
+            <h3>
+                Our gist
+            </h3>
 
-        <p>
+            <p>
+                There is something about talking to you.
+                We can start with one small topic and somehow end up
+                discussing five completely different things.
+            </p>
 
-          There is something about talking to you.
-          We can start with one small topic and somehow end up
-          discussing five completely different things.
-
-        </p>
-
-      </div>
+        </div>
 
 
-      <div class="card">
+        <div class="card">
 
-        <h3>
-          Our time together
-        </h3>
+            <h3>
+                Our time together
+            </h3>
 
-        <p>
+            <p>
+                I love the simple moments with you.
+                Sitting together, talking, watching something,
+                laughing and just enjoying each other's company.
+            </p>
 
-          I love the simple moments with you.
-          Sitting together, talking, watching something,
-          laughing and just enjoying each other's company.
-
-        </p>
-
-      </div>
+        </div>
 
 
-      <div class="card">
+        <div class="card">
 
-        <h3>
-          Your place in my life
-        </h3>
+            <h3>
+                Your place in my life
+            </h3>
 
-        <p>
+            <p>
+                You have become part of my everyday thoughts in a way
+                I did not plan for. And honestly, I like it here.
+            </p>
 
-          You have become part of my everyday thoughts in a way
-          I did not plan for. And honestly, I like it here.
-
-        </p>
-
-      </div>
+        </div>
 
 
-      <div class="card">
+        <div class="card">
 
-        <h3>
-          You being you
-        </h3>
+            <h3>
+                You being you
+            </h3>
 
-        <p>
+            <p>
+                No long speech for this one.
+                I just like you. Very much.
+            </p>
 
-          No long speech for this one.
-          I just like you. Very much.
-
-        </p>
-
-      </div>
-
+        </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- =========================
-       QUALITY TIME
-  ========================== -->
+<!-- QUALITY TIME -->
 
-  <section class="highlight reveal">
+<section class="highlight reveal">
 
     <div class="highlight-inner">
 
-      <div class="section-label">
-        The Quality Time Department
-      </div>
+        <div class="section-label">
+            The Quality Time Department
+        </div>
 
+        <h2>
+            My favourite thing is actually just being with you.
+        </h2>
 
-      <h2>
-        My favourite thing is actually just being with you.
-      </h2>
+        <p>
+            It does not always have to be somewhere fancy.
+            Sometimes it is just us talking, laughing, watching a movie
+            or doing absolutely nothing important.
 
-
-      <p>
-
-        It does not always have to be somewhere fancy.
-        Sometimes it is just us talking, laughing, watching a movie
-        or doing absolutely nothing important.
-
-        Those moments mean a lot to me because they are ours.
-
-      </p>
+            Those moments mean a lot to me because they are ours.
+        </p>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- =========================
-       MILLENNIAL VS GEN Z
-  ========================== -->
+<!-- MILLENNIAL VS GEN Z -->
 
-  <section class="reveal">
+<section class="reveal">
 
     <div class="section-label">
-      Official Relationship Court
+        Official Relationship Court
     </div>
 
-
     <h2>
-      Millennial vs Gen Z
+        Millennial vs Gen Z
     </h2>
-
 
     <p class="lead">
 
-      Since we apparently cannot have a normal conversation without
-      this matter finding its way into it, I have decided to settle it officially.
+        Since we apparently cannot have a normal conversation without
+        this matter finding its way into it, I have decided to settle it officially.
 
     </p>
 
-
     <div class="court">
 
-      <p>
+        <p>
+            <strong>Case:</strong>
+            Who is actually correct about whether something is Millennial or Gen Z?
+        </p>
 
-        <strong>Case:</strong>
-        Who is actually correct about whether something is Millennial or Gen Z?
+        <p>
+            <strong>Defendant:</strong>
+            Femi
+        </p>
 
-      </p>
+        <p>
+            <strong>Prosecutor:</strong>
+            Me, obviously.
+        </p>
 
+        <div class="choice">
 
-      <p>
+            <button onclick="verdict('me')">
+                Elizabeth is right
+            </button>
 
-        <strong>Defendant:</strong>
-        Femi
+            <button onclick="verdict('femi')">
+                Femi is right
+            </button>
 
-      </p>
+            <button onclick="verdict('both')">
+                Both of you are doing too much
+            </button>
 
+        </div>
 
-      <p>
-
-        <strong>Prosecutor:</strong>
-        Me, obviously.
-
-      </p>
-
-
-      <div class="choice">
-
-        <button onclick="verdict('me')">
-          Elizabeth is right
-        </button>
-
-
-        <button onclick="verdict('femi')">
-          Femi is right
-        </button>
-
-
-        <button onclick="verdict('both')">
-          Both of you are doing too much
-        </button>
-
-      </div>
-
-
-      <div class="verdict" id="verdict"></div>
+        <div class="verdict" id="verdict"></div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- =========================
-       BIRTHDAY CAKE
-  ========================== -->
+<!-- CAKE -->
 
-  <section class="cake-section reveal">
+<section class="cake-section reveal">
 
     <div class="section-label">
-      Birthday Moment
+        Birthday Moment
     </div>
 
-
     <h2>
-      Make a wish, Ifemi ❤️
+        Make a wish, Ifemi ❤️
     </h2>
 
+    <p class="cake-intro">
 
-    <p class="cake-subtitle">
+        You cannot have a birthday website made by your girlfriend
+        without a proper birthday cake.
 
-      You cannot have a birthday website made by your girlfriend
-      without a proper birthday cake.
-
-      So here we are.
+        So here we are.
 
     </p>
 
@@ -1650,594 +984,423 @@
     <div class="cake-area">
 
 
-      <div class="candles">
+        <div class="candles">
 
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
 
-        <div class="candle">
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
 
-          <div class="flame"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
 
-        </div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
 
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
 
-        <div class="candle">
-
-          <div class="flame"></div>
-
-        </div>
-
-
-        <div class="candle">
-
-          <div class="flame"></div>
-
-        </div>
-
-
-        <div class="candle">
-
-          <div class="flame"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
 
         </div>
 
 
-        <div class="candle">
+        <div class="cake">
 
-          <div class="flame"></div>
+            <div class="cake-top"></div>
 
-        </div>
+            <div class="cream"></div>
 
+            <div class="cake-writing">
+                Happy Birthday<br>
+                Ifemi ❤️
+            </div>
 
-        <div class="candle">
-
-          <div class="flame"></div>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="cake">
-
-        <div class="cake-top"></div>
-
-        <div class="cream"></div>
-
-
-        <div class="cake-writing">
-
-          Happy Birthday<br>
-          Ifemi ❤️
+            <div class="cake-decoration">
+                ♥ ♥ ♥ ♥ ♥
+            </div>
 
         </div>
 
 
-        <div class="cake-decoration">
-          ♥ ♥ ♥ ♥ ♥
-
-        </div>
-
-      </div>
-
-
-      <div class="cake-plate"></div>
-
+        <div class="cake-plate"></div>
 
     </div>
 
 
     <button
-      class="blow-button"
-      onclick="blowCandles()">
+        class="blow-button"
+        onclick="blowCandles()">
 
-      🕯️ Blow the candles
+        🕯️ Blow the candles
 
     </button>
 
 
     <div
-      id="wish-message"
-      class="wish-message">
+        id="wish-message"
+        class="wish-message">
 
-      Make a wish, my baby. ❤️
+        Make a wish, my baby. ❤️
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- =========================
-       BIRTHDAY WISH
-  ========================== -->
+<!-- BIRTHDAY WISH -->
 
-  <section class="reveal">
+<section class="reveal">
 
     <div class="section-label">
-      Your Birthday Wish
+        Your Birthday Wish
     </div>
 
-
     <h2>
-      What I want for you this year.
+        What I want for you this year.
     </h2>
-
 
     <div class="letter">
 
+        <p>
+            My baby,
+        </p>
 
-      <p>
-        My baby,
-      </p>
+        <p>
+            On your birthday, I just want good things for you.
+        </p>
 
+        <p>
+            I pray that God keeps you, protects you and gives you good health.
+            I pray that the things you have been working towards begin to fall into place
+            and that you have the wisdom to recognise the opportunities that are meant for you.
+        </p>
 
-      <p>
-        On your birthday, I just want good things for you.
-      </p>
+        <p>
+            I pray that this new year of your life brings you peace,
+            genuine happiness, growth and plenty of reasons to smile.
+            I pray that the work of your hands is blessed and that you are able to enjoy
+            the results of everything you have been putting your effort into.
+        </p>
 
+        <p>
+            I hope you meet people who genuinely want to see you do well.
+            I hope you have the courage to go after the things you really want
+            and the patience to keep going when things take longer than expected.
+        </p>
 
-      <p>
+        <p>
+            And above everything, I pray that you continue to become the man
+            you want to be.
 
-        I pray that God keeps you, protects you and gives you good health.
-        I pray that the things you have been working towards begin to fall into place
-        and that you have the wisdom to recognise the opportunities that are meant for you.
+            Not because you have to prove anything to anybody,
+            but because there is still so much ahead of you.
+        </p>
 
-      </p>
+        <p>
+            I want this year to be kind to you.
+            I want you to laugh more, enjoy yourself more,
+            win at the things that matter to you and have plenty of moments
+            that make you look back and say,
+            "Yeah, this was a good year."
+        </p>
 
+        <p>
+            Happy birthday, Ifemi.
+            I am genuinely happy that you were born.
+        </p>
 
-      <p>
-
-        I pray that this new year of your life brings you peace,
-        genuine happiness, growth and plenty of reasons to smile.
-        I pray that the work of your hands is blessed and that you are able to enjoy
-        the results of everything you have been putting your effort into.
-
-      </p>
-
-
-      <p>
-
-        I hope you meet people who genuinely want to see you do well.
-        I hope you have the courage to go after the things you really want
-        and the patience to keep going when things take longer than expected.
-
-      </p>
-
-
-      <p>
-
-        And above everything, I pray that you continue to become the man
-        you want to be.
-
-        Not because you have to prove anything to anybody,
-        but because there is still so much ahead of you.
-
-      </p>
-
-
-      <p>
-
-        I want this year to be kind to you.
-        I want you to laugh more, enjoy yourself more,
-        win at the things that matter to you and have plenty of moments
-        that make you look back and say,
-        "Yeah, this was a good year."
-
-      </p>
-
-
-      <p>
-
-        Happy birthday, Ifemi.
-        I am genuinely happy that you were born.
-
-      </p>
-
-
-      <div class="signature">
-        I love you ❤️
-      </div>
-
+        <div class="signature">
+            I love you ❤️
+        </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- =========================
-       LOVE LETTER
-  ========================== -->
+<!-- LOVE LETTER -->
 
-  <section class="reveal">
+<section class="reveal">
 
     <div class="section-label">
-      Okay, enough teasing
+        Okay, enough teasing
     </div>
 
-
     <h2>
-      Let me be serious for a minute.
+        Let me be serious for a minute.
     </h2>
-
 
     <div class="letter">
 
+        <p>
+            My baby,
+        </p>
 
-      <p>
-        My baby,
-      </p>
+        <p>
+            I really hope you know how much I appreciate having you in my life.
+            I love the time we spend together, our conversations, the random gist,
+            the movies and even the little arguments that somehow become full discussions.
+        </p>
 
+        <p>
+            One thing I genuinely admire about you is how intentional you are.
+            I notice it. I notice the little things, the effort and the way you
+            approach the people and things that matter to you.
+        </p>
 
-      <p>
+        <p>
+            I also love how comfortable I can be around you.
+            I can talk to you, gist with you, laugh with you and just enjoy
+            being myself around you.
+        </p>
 
-        I really hope you know how much I appreciate having you in my life.
-        I love the time we spend together, our conversations, the random gist,
-        the movies and even the little arguments that somehow become full discussions.
+        <p>
+            These 11 months have given me memories that I genuinely treasure.
+            And I am looking forward to making many more with you.
+        </p>
 
-      </p>
+        <p>
+            I want more conversations that start from nowhere.
+            More movies that we may or may not actually finish watching.
+            More quality time.
+            More laughter.
+            More memories.
+        </p>
 
+        <p>
+            And yes, unfortunately for you,
+            more arguments about whether something is Millennial or Gen Z.
+        </p>
 
-      <p>
+        <p>
+            Thank you for being you.
+            Thank you for the sweetness, the intentionality
+            and the place you have made for me in your life.
+        </p>
 
-        One thing I genuinely admire about you is how intentional you are.
-        I notice it. I notice the little things, the effort and the way you
-        approach the people and things that matter to you.
+        <p>
+            Happy birthday, my man.
+            I love you.
+        </p>
 
-      </p>
-
-
-      <p>
-
-        I also love how comfortable I can be around you.
-        I can talk to you, gist with you, laugh with you and just enjoy
-        being myself around you.
-
-      </p>
-
-
-      <p>
-
-        These 11 months have given me memories that I genuinely treasure.
-        And I am looking forward to making many more with you.
-
-      </p>
-
-
-      <p>
-
-        I want more conversations that start from nowhere.
-        More movies that we may or may not actually finish watching.
-        More quality time.
-        More laughter.
-        More memories.
-
-      </p>
-
-
-      <p>
-
-        And yes, unfortunately for you,
-        more arguments about whether something is Millennial or Gen Z.
-
-      </p>
-
-
-      <p>
-
-        Thank you for being you.
-        Thank you for the sweetness, the intentionality
-        and the place you have made for me in your life.
-
-      </p>
-
-
-      <p>
-
-        Happy birthday, my man.
-        I love you.
-
-      </p>
-
-
-      <div class="signature">
-        Your baby ❤️
-      </div>
-
+        <div class="signature">
+            Your baby ❤️
+        </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- =========================
-       FINAL
-  ========================== -->
+<!-- FINAL -->
 
-  <section class="final">
-
+<section class="final">
 
     <div class="script">
-      For my MAN
+        For my MAN
     </div>
 
-
     <h2>
-
-      Happy Birthday, Ifemi
-      <span class="heart">❤️</span>
-
+        Happy Birthday, Ifemi
+        <span class="heart">❤️</span>
     </h2>
 
-
     <p>
-
-      My man.
-      My baby.
-      My favourite gist partner.
-      My movie partner.
-      My favourite person to argue with.
-
+        My man.
+        My baby.
+        My favourite gist partner.
+        My movie partner.
+        My favourite person to argue with.
     </p>
 
-
     <p>
+        I hope you have a really good birthday.
 
-      I hope you have a really good birthday.
+        And yes, your birthday gift includes unlimited access to me today.
 
-      And yes, your birthday gift includes unlimited access to me today.
-
-      Please use it wisely.
-
+        Please use it wisely.
     </p>
 
-
     <p>
-
-      <strong>
-        Now come and collect your birthday hug. ❤️
-      </strong>
-
+        <strong>
+            Now come and collect your birthday hug. ❤️
+        </strong>
     </p>
 
-
-  </section>
-
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
-
-  <script>
+</section>
 
 
-    /* =========================
-       MILLENNIAL VS GEN Z
-    ========================== */
-
-    function verdict(choice) {
-
-      const box = document.getElementById("verdict");
+<script>
 
 
-      if (choice === "me") {
+/* MILLENNIAL VS GEN Z */
+
+function verdict(choice) {
+
+    const box = document.getElementById("verdict");
+
+    if (choice === "me") {
 
         box.textContent =
-          "Correct answer. Case closed. Thank you for participating. 😂❤️";
-
-      }
-
-      else if (choice === "femi") {
-
-        box.textContent =
-          "Interesting. Unfortunately, the court has rejected this evidence. 😂";
-
-      }
-
-      else {
-
-        box.textContent =
-          "Finally, somebody is being sensible. But I still think I am right. 😂❤️";
-
-      }
+        "Correct answer. Case closed. Thank you for participating. 😂❤️";
 
     }
 
+    else if (choice === "femi") {
 
-    /* =========================
-       BLOW CANDLES
-    ========================== */
+        box.textContent =
+        "Interesting. Unfortunately, the court has rejected this evidence. 😂";
 
-    function blowCandles() {
+    }
+
+    else {
+
+        box.textContent =
+        "Finally, somebody is being sensible. But I still think I am right. 😂❤️";
+
+    }
+
+}
 
 
-      const flames =
-        document.querySelectorAll(".flame");
+/* BLOW CANDLES */
 
+function blowCandles() {
 
-      const message =
-        document.getElementById("wish-message");
+    const flames = document.querySelectorAll(".flame");
 
+    const message = document.getElementById("wish-message");
 
-      flames.forEach(function(flame) {
+    flames.forEach(function(flame) {
 
         flame.classList.add("blown");
 
-      });
+    });
+
+    message.textContent =
+    "Candles blown! Now make that wish, Ifemi. ❤️🎂";
+
+    message.classList.add("show");
+
+    createConfetti();
+
+    createHearts();
+
+}
 
 
-      message.textContent =
-        "Candles blown! Now make that wish, Ifemi. ❤️🎂";
+/* CONFETTI */
 
+function createConfetti() {
 
-      message.classList.add("show");
+    for (let i = 0; i < 100; i++) {
 
+        const piece = document.createElement("div");
 
-      createConfetti();
+        piece.className = "confetti";
 
+        piece.textContent = ["❤️", "♥", "✦", "•"][Math.floor(Math.random() * 4)];
 
-      createHearts();
+        piece.style.left =
+        Math.random() * 100 + "vw";
 
+        piece.style.fontSize =
+        (8 + Math.random() * 14) + "px";
 
-    }
+        piece.style.animationDelay =
+        Math.random() * 1.5 + "s";
 
-
-    /* =========================
-       CONFETTI
-    ========================== */
-
-    function createConfetti() {
-
-
-      const pieces = 90;
-
-
-      for (let i = 0; i < pieces; i++) {
-
-
-        const confetti =
-          document.createElement("div");
-
-
-        confetti.classList.add("confetti");
-
-
-        confetti.style.left =
-          Math.random() * 100 + "vw";
-
-
-        confetti.style.animationDelay =
-          Math.random() * 1.5 + "s";
-
-
-        confetti.style.transform =
-          "rotate(" + Math.random() * 360 + "deg)";
-
-
-        const shapes = [
-
-          "❤️",
-          "✦",
-          "♥",
-          "•"
-
-        ];
-
-
-        confetti.textContent =
-          shapes[Math.floor(Math.random() * shapes.length)];
-
-
-        confetti.style.fontSize =
-          (8 + Math.random() * 14) + "px";
-
-
-        document.body.appendChild(confetti);
-
+        document.body.appendChild(piece);
 
         setTimeout(function() {
 
-          confetti.remove();
+            piece.remove();
 
-        }, 4500);
-
-      }
+        }, 5000);
 
     }
 
-
-    /* =========================
-       FLOATING HEARTS
-    ========================== */
-
-    function createHearts() {
+}
 
 
-      for (let i = 0; i < 25; i++) {
+/* FLOATING HEARTS */
 
+function createHearts() {
 
-        const heart =
-          document.createElement("div");
+    for (let i = 0; i < 25; i++) {
 
+        const heart = document.createElement("div");
 
-        heart.classList.add("floating-heart");
-
+        heart.className = "floating-heart";
 
         heart.textContent = "❤️";
 
-
         heart.style.left =
-          Math.random() * 100 + "vw";
-
-
-        heart.style.animationDelay =
-          Math.random() * 2 + "s";
-
+        Math.random() * 100 + "vw";
 
         heart.style.fontSize =
-          (14 + Math.random() * 20) + "px";
+        (14 + Math.random() * 20) + "px";
 
+        heart.style.animationDelay =
+        Math.random() * 2 + "s";
 
         document.body.appendChild(heart);
 
-
         setTimeout(function() {
 
-          heart.remove();
+            heart.remove();
 
         }, 9000);
 
-      }
-
     }
 
-
-    /* =========================
-       SCROLL REVEAL
-    ========================== */
-
-    const observer =
-      new IntersectionObserver(
-
-        (entries) => {
+}
 
 
-          entries.forEach(entry => {
+/* SCROLL ANIMATION */
 
+const observer = new IntersectionObserver(
+
+    function(entries) {
+
+        entries.forEach(function(entry) {
 
             if (entry.isIntersecting) {
 
-              entry.target.classList.add("show");
+                entry.target.classList.add("show");
 
             }
 
+        });
 
-          });
+    },
 
+    {
+        threshold: 0.12
+    }
 
-        },
-
-
-        {
-          threshold: 0.12
-        }
-
-      );
+);
 
 
-    document
-      .querySelectorAll(".reveal")
-      .forEach(el => {
+document.querySelectorAll(".reveal").forEach(function(element) {
 
-        observer.observe(el);
+    observer.observe(element);
 
-      });
+});
 
-
-  </script>
-
+</script>
 
 </body>
-
 </html>
 ```
+
 
